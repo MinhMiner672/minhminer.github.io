@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <meta property="og:title" content="MinhMiner - Home Page">
+    <meta property="og:description" content="This is just my personal website, made for fun!">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/902784727264673842/948887953642496020/night_2.jpg">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>MinhMiner</title>
+</head>
+<body>
+    <!-- Main Section -->
+    <div class="main" id="main-section">
+        <!-- Bio | Article -->
+        <div class="bio">
+            <!-- Title with avatar -->
+            <div class="title">
+                <div class="avatar">
+                    <img src="images/main/avatar.jpg" alt="">
+                </div>
+                <h1>Hello, I'm MinhMiner 👋</h1>
+            </div>
+            
+            <!-- Paragraph -->
+            <hr>
+            <p>You're awesome, I hope you have a great day :D. <br> I'm a student from Vietnam who likes to code, and now I'm learning web development</p>
+
+            <br>
+
+            <!-- Personal Info -->
+            <div class="personal-info">
+                <ul>
+                    <li>I mainly play <span class="lol">League of Legends</span>, <span class="osu">Osu!</span> and <span class="mc">Minecraft</span></li>
+                    <li>I also really love US-UK music</li>
+                </ul>
+            </div>
+
+            <!-- Contact list -->
+            <div class="contact">
+                <a href="https://github.com/MinhMiner672" target="_blank" class="icon github" onmouseover="popUpText(this)" onmouseout="hideText(this)">
+                    <img src="images/icons/github.png" alt="">
+                    <div class="text">
+                        Github
+                    </div>
+                </a>
+                <a href="https://discord.com/users/751265539669622785" class="icon discord" target="_blank" onmouseover="popUpText(this)" onmouseout="hideText(this)">
+                    <img src="images/icons/discord.png" alt="">
+                    <div class="text">
+                        Discord
+                    </div>
+                </a>
+                <a href="https://twitter.com/MinhMiner5" target="_blank" class="icon twitter" onmouseover="popUpText(this)" onmouseout="hideText(this)">
+                    <img src="images/icons/twitter.png" alt="">
+                    <div class="text">
+                        Twitter
+                    </div>
+                </a>
+                <a href="https://www.reddit.com/user/OrganizationOk7046" target="_blank" class="icon reddit" onmouseover="popUpText(this)" onmouseout="hideText(this)">
+                    <img src="images/icons/reddit.png" alt="">
+                    <div class="text">
+                        Reddit
+                    </div>
+                </a>
+
+                <!-- Projects button -->
+                <a href="#projects-list-title" class="box projects-button" onclick="showGoUpButton(this)">
+                    My Stuff
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- List of projects -->
+    <div class="projects" id="projects-list">
+        <div class="title" id="projects-list-title"> 
+            <h1>My Stuff</h1>
+            
+            <div class="line"></div>
+        </div>
+        <div class="list">
+            <a href="https://github.com/MinhMiner672/Flappy-Bird" target="_blank" class="project flappy-bird" onmouseenter="changeProjectColor(this, 'flappyBird')" onmouseleave="restoreProjectColor(this)">
+                <div class="title">
+                    🐦 Flappy Bird
+                </div>
+                <div class="description">
+                    A nice clone of the Flappy Bird game made from scratch.
+                    The original game was created by a Vietnamese developer called Nguyen Ha Dong
+                </div>
+            </a>
+            <a href="https://github.com/MinhMiner672/Tetris" target="_blank" class="project tetris" onmouseenter="changeProjectColor(this, 'tetris')" onmouseleave="restoreProjectColor(this)">
+                <div class="title">🎮 Tetris</div>
+                <div class="description">
+                    Just tetris, another classic game, but written in Pygame
+                </div>
+            </a>
+            <a href="https://github.com/MinhMiner672/Snake-Game" target="_blank" class="project snake-game" onmouseenter="changeProjectColor(this, 'snakeGame')" onmouseleave="restoreProjectColor(this)">
+                <div class="title">🐍 Snake Game</div>
+                <div class="description">Snake~~, a symbol of a programming language that created this game - Python</div>
+            </a>
+            <a href="https://github.com/MinhMiner672/Space-Invaders" target="_blank" class="project space-invaders" onmouseenter="changeProjectColor(this, 'spaceInvaders')" onmouseleave="restoreProjectColor(this)">
+                <div class="title">👽 Space Invaders</div>
+                <div class="description">This is my <b>first</b> 2D game that I've ever created, and obviously the worst one</div>
+            </a>
+            <a href="https://github.com/MinhMiner672/minhminer.io" target="_blank" class="project this-website" onmouseenter="changeProjectColor(this, 'thisWebsite')" onmouseleave="restoreProjectColor(this)">
+                <div class="title">👍 This website</div>
+                <div class="description">
+                    My first personal project that I need to use HTML, CSS, JS. I used to use Python a lot in the past :)) 
+                </div>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
