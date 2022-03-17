@@ -1,5 +1,5 @@
 # minhminer.io | My First Website
-This is the actual URL: https://minhminer.netlify.com 
+This is the actual URL: https://minhminer.netlify.app 
 
 ## Languages I used
 <img src='https://cdn-icons-png.flaticon.com/128/174/174854.png' style='height: 3rem' align='left'>
