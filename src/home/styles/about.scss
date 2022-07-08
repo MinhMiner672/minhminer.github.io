@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Source+Sans+Pro:wght@600&display=swap');
+
+
+.about-me {
+    color: white;
+    margin: 7rem 15rem 12rem 15rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+
+    align-items: flex-start;
+
+    .title {
+        font-size: 2.5rem;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .writing {
+        font-size: 1.2rem;
+        font-family: 'Nunito', sans-serif;
+
+        .github-profile-link {
+            text-decoration: none; 
+            color: rgb(255, 168, 86);
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .discord-link {
+            text-decoration: none;
+            color: white;
+            font-style: bold;
+
+            &:hover {
+                color: rgb(154, 147, 255);
+            }
+        }
+
+        .back {
+            text-decoration: none;
+            user-select: none;
+            font-size: 1rem;
+            margin-left: 5px;
+            color: rgb(82, 82, 82);
+
+            &:hover {
+                cursor: pointer;
+                color: rgb(182, 182, 182);
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 1110px) {
+    .about-me {
+        margin: 7rem 10rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about-me {
+        margin: 7rem 5rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .about-me {
+        margin: 7rem 2rem; 
+    }
+}

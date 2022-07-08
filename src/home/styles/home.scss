@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --distance: 0; // The length from the left side of the viewport to the left side of the avatar image
+    --avatar-width: 9rem;
+    --background-color: rgb(32, 32, 32);
+    scroll-behavior: smooth;
+}
+
+
+body {
+    overflow: hidden;
+    font-size: 16px;
+    background-color: var(--background-color);
+}
+
+.home {
+    height: 100vh; // To make align-items work
+    display: flex;
+    gap: 1rem; // Gap between avatar and the rest
+    align-items: center;
+    justify-content: center;
+
+    .avatar {
+        user-select: none;
+
+        animation: move_to_left 1s ease forwards 1.1s;
+        position: relative; // To be able to contain the .border
+
+        // This moves the avatar image to the center of the page based on its original
+        // x position
+        left: calc((100vw / 2) - var(--distance) - (var(--avatar-width) / 2));
+
+        .border { // This is what covers over the image as a black circle, with absolute position
+            width: var(--avatar-width);
+            height: var(--avatar-width);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            border-radius: 50%;
+            border: solid rgb(32, 32, 32);
+            border-width: 4rem;
+            animation: reveal_avatar 1s ease forwards;
+        }
+
+        // Avatar <img> tag
+        img {
+            border: 1px solid rgb(32, 32, 32);
+            border-radius: 50%;
+            width: var(--avatar-width);
+            height: var(--avatar-width)
+        }
+    }
+
+
+    // Links
+    .navigation  {
+        opacity: 0;
+        animation: fade_out 0.7s ease forwards 2s;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                position: relative;
+                font-size: 2.3rem;
+                font-family: 'Varela Round', sans-serif;
+                color: white;
+
+                .minhminer {
+                    color: orange;
+                }
+
+                .reveal {
+                    position: absolute;
+                    right: 0;
+                    left: 0;
+                    top: 0;
+                    height: 90%;
+                    animation: 2s typing steps(15) forwards 2s;
+                    background-color: var(--background-color);
+                }
+
+                .cursor {
+                    display: inline-block;
+                    height: 2.2rem;
+                    width: 3px;
+                    border-radius: 20px;
+                    animation: 1s blinking ease infinite;
+                    background-color: white;
+                }
+            }
+            
+            .quick-desc {
+                opacity: 0;
+                animation: fade_out 0.7s ease forwards 4.5s; 
+                font-family: 'Nunito', sans-serif;
+                font-size: 1.2rem;
+                color: rgb(182, 182, 182);
+            }
+        }
+
+        .links {
+            opacity: 0;
+            animation: fade_out 0.7s ease forwards 5s; 
+
+            user-select: none;
+            margin-top: 1rem; 
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+
+            & > * {
+                filter: invert(80%) sepia(24%) saturate(3769%) hue-rotate(326deg) brightness(121%) contrast(101%);
+                img {
+                    height: 1.7rem;
+                }
+            }
+
+            .about-me-link:hover {
+                filter: invert(93%) sepia(12%) saturate(1400%) hue-rotate(331deg) brightness(104%) contrast(104%);
+            }
+
+            .github-link:hover {
+                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(315deg) brightness(107%) contrast(101%);
+            }
+
+            .twitter-link:hover {
+                filter: invert(83%) sepia(16%) saturate(5601%) hue-rotate(174deg) brightness(103%) contrast(101%);
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+    .home {
+        .navigation {
+            .text {
+                .title {
+                    font-size: 2rem;
+                }
+
+                .quick-desc {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes reveal_avatar {
+    from { border-width: 4rem; }
+    to { border-width: 0rem; }
+}
+
+
+@keyframes move_to_left {
+    from {
+        left: calc((100vw / 2) - var(--distance) - (var(--avatar-width) / 2));
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes typing {
+    from { 
+        margin-left: 0;
+    }
+    to { 
+        margin-left: 20rem;
+    }
+}
+
+
+@keyframes fade_out {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+@keyframes blinking {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
