@@ -1,4 +1,4 @@
-// Add comments
+// Remove comments
 
 // Show text indicating name of each social platform (twitter, reddit,...)
 function popUpText(e) {
