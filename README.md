@@ -1,11 +1,7 @@
-# minhminer.io | v2.0 
+# minhminer.io | v3.0 (Latest) 
 
-### I did not intend to host this repository
+Finally my personal website has its actual domain name `minhminer.io`
+This all thanks to **Github Pages**
 
-But I'll give you some images of the page
 
-- **The home page:**
-<img src='https://cdn.discordapp.com/attachments/980672453623820288/995005654391607306/unknown.png' alt="home_page_image" style="width: 28rem;">
-
-- **List of my favorite artists and anime** (*the most exhausting part*)
-<img src='https://cdn.discordapp.com/attachments/980672453623820288/995004965632360589/unknown.png' style="width: 28rem;">
+You can visit it here: https://minhminer.github.io
