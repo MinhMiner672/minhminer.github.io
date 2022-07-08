@@ -1,3 +1,5 @@
+// Add comments
+
 // Show text indicating name of each social platform (twitter, reddit,...)
 function popUpText(e) {
     // It's ridiculous to show the name of each platform
