@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+main {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 5rem 5rem;
+    justify-content: center;
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        width: 25rem;
+        font-size: 1rem;
+        border: 2px solid orange;
+
+        .title {
+            gap: 5px;
+            display: flex;
+            align-items: center;
+
+            .icon {
+                width: 1.5rem;
+            }
+
+            .hyperlink {
+                color: rgb(110, 255, 255);
+                font-weight: bold;
+                text-decoration: underline;
+            }
+
+            .open-source, .preview {
+                font-style: italic;
+                font-size: 0.8em;
+            }
+        }
+
+        .tags {
+            margin-top: 5px;
+            display: flex;
+            & > * {
+                display: none;
+                margin: 0 2px;
+                font-size: 0.8rem;
+                border: 1px solid white;
+                padding: 1px 8px;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .python-lang {
+        .python {
+            display: initial;
+            border: 2px solid rgb(122, 164, 255);
+            color: rgb(254, 255, 215);
+        }
+    }
+
+    .typescript-lang {
+        .typescript {
+            display: initial;
+            color: rgb(98, 205, 255);
+            border: 2px solid rgb(0, 145, 212);
+        }
+    }
+
+    .javascript-lang {
+        .javascript {
+            display: initial;
+            color: rgb(255, 255, 0);
+            border: 2px solid rgb(230, 230, 0);
+        }
+    }
+
+    .discord-bot-cate {
+        .discord-bot {
+            display: initial;
+            color: rgb(167, 166, 255);
+            border: 2px solid rgb(137, 124, 255);
+        }
+    }
+
+    .game-cate {
+        .game {
+            display: initial;
+            border: 2px solid rgb(158, 255, 158);
+            color: rgb(199, 255, 147);
+        }
+    }
+}
+
