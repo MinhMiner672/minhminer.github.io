@@ -1,12 +1,12 @@
-# minhminer.io | My First Website
-This is the actual URL: https://minhminer.netlify.app 
+# minhminer.io | v2.0 
 
-## Languages I used
-<img src='https://cdn-icons-png.flaticon.com/128/174/174854.png' style='height: 3rem' align='left'>
-<img src='https://cdn-icons-png.flaticon.com/128/732/732190.png' style='height: 3rem' align='left'> 
-<img src='https://cdn-icons-png.flaticon.com/128/5968/5968292.png' style='height: 3rem' > 
+### I did not intend to host this repository
 
-## How I host my website?
-I use [**Netlify**](https://netlify.com) which is a free platform for deploying sites 
+But I'll give you some images of the page
 
+- **The home page:**
+<img src='https://cdn.discordapp.com/attachments/980672453623820288/995004662816194651/unknown.
+png'>
 
+- **List of my favorite artists and anime** (*the most exhausting part*)
+<img src='https://cdn.discordapp.com/attachments/980672453623820288/995004965632360589/unknown.png'>
