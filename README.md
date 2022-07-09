@@ -1,8 +1,7 @@
-# minhminer.io | My First Website
-Version: `1.0` 
-This is the actual URL: https://minhminer.netlify.com 
+# minhminer.io | v3.0 (Latest) 
 
-## How I host my website?
-I use [**Netlify**](https://netlify.com) which is a free platform for deploying sites 
+Finally my personal website has its actual domain name `minhminer.io`
+This all thanks to **Github Pages**
 
 
+You can visit it here: https://minhminer.github.io
