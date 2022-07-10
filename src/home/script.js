@@ -1,4 +1,4 @@
-// Resize the width of avatar image based on the width of the user device after loading the page (merge test)
+// Resize the width of avatar image based on the width of the user device after loading the page
 if (window.innerWidth > 800) {
     document.querySelector(':root').style.setProperty('--avatar-width', '9rem')
 } else if (window.innerWidth > 560) {
